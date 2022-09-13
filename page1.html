@@ -8,12 +8,38 @@
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    
+
     <nav>
         <a href="page1.html">page 1</a>
         <a href="page2.html">page 2</a>
         <a href="page3.html">page 3</a>
         <a href="page4.html">page 4</a>
     </nav>
+    <input type="number" maxlength="4" size="4" id="number1">
+    <input type="number" maxlength="4" size="4" id="number2">
+    <button id="checkNumber">Compute</button>
+    <p>Resultat: <span id="result"></span> </p>
+    <script>
+
+    // btn to check number
+    const btn = document.getElementById("checkNumber");
+
+    // Function to check number
+    const checkNumber = () =>{
+        // First number:
+        const number1 = document.getElementById("number1").value;
+        // Second number:
+        const number2 = document.getElementById("number2").value;
+
+        // Do some checking:
+        const result = document.getElementById("result");
+
+        // vis resultat:
+        result.innerHTML = Number(number1) + Number(number2);
+    };
+    // Start check number on click
+    btn.addEventListener("click", checkNumber);
+
+    </script>
 </body>
 </html>
