@@ -25,7 +25,8 @@
         document.querySelector("button").addEventListener("click", (e) => {
             pattern(Number(prompt("Indtast et antal rækker")))
         })
-        
+
+        // Svar på mønster opgaven
         const pattern = (num) => {
             for (let i = 0; i < num; i++) {
                 let output = "";
@@ -35,6 +36,15 @@
                 console.log(output);
             }
         };
+
+        // Svar på sum af alle tal i et tal opgaven
+        const sum = (num) => {
+            let final = 0;
+            for(let i = 0; i < String(num).length; i++){
+                final = final + Number(String(num)[i]);
+            }
+            return final;
+        }
     </script>
 </body>
 
