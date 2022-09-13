@@ -1,0 +1,15 @@
+*{
+    margin:0;
+    box-sizing:border-box;
+    font-family: monospace;
+}
+
+nav{
+    padding: 20px;
+    width:100%;
+    background-color:whitesmoke;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    gap: 20px;
+}
