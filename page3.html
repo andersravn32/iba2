@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    
+
     <nav>
         <a href="page1.html">page 1</a>
         <a href="page2.html">page 2</a>
@@ -16,6 +16,26 @@
         <a href="page4.html">page 4</a>
         <a href="page5.html">page 5</a>
     </nav>
+    <p id="displayResult"></p>
+<script>
+// get numbers:
+const numberText = prompt("Skriv et tal");
+// Split the numbers
+const chars = numberText.split("");
 
+// Reset result
+let result = 0;
+// Count the numbers
+for(let i = 0; i < chars.length; i++){
+    // Convert the numbers separetely
+    const converted = Number(chars[i]);
+    // add to result:
+    result = result+converted;
+}
+// Display the result in page
+document.getElementById("displayResult").innerHTML = result;
+//Display result in console
+console.log(result);
+</script>
 </body>
 </html>
